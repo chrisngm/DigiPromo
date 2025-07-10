@@ -35,7 +35,7 @@
         <div class="flex justify-center px-4 py-3">
           <button id="scan-button" class="flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full !bg-[#38e07b] px-5 pl-5 text-base font-bold leading-normal tracking-[0.015em] text-[#111714]">
             <div class="text-[#111714]" data-icon="Camera" data-size="24px" data-weight="regular"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path></svg></div>
-            <span class="truncate">Scan product</span>
+            <span class="truncate">Numériser le produit</span>
           </button>
         </div>
       </div>
@@ -87,7 +87,7 @@
 
           // Affiche la vue caméra et le message de feedback
           cameraContainer.classList.remove('hidden');
-          feedbackText.textContent = "Scanning in progress...";
+          feedbackText.textContent = "Numérisation en cours...";
 
           // Lance un timer de 5 secondes (5000 millisecondes)
           redirectTimer = setTimeout(() => {
@@ -96,8 +96,8 @@
           }, 5000);
 
         } catch (err) {
-          console.error("Error accessing camera: ", err);
-          alert("Could not access camera. Please check permissions.");
+          console.error("Erreur d'accès à la caméra: ", err);
+          alert("Impossible d'accéder à la caméra. Veuillez vérifier les autorisations.");
         }
       });
 
