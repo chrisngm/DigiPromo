@@ -89,11 +89,11 @@
           cameraContainer.classList.remove('hidden');
           feedbackText.textContent = "Numérisation en cours...";
 
-          // Lance un timer de 5 secondes (5000 millisecondes)
+          // Lance un timer de 3 secondes (3000 millisecondes)
           redirectTimer = setTimeout(() => {
-            // Après 5 secondes, redirige vers la page produit
+            // Après 3 secondes, redirige vers la page produit
             window.location.href = '/produit.html';
-          }, 5000);
+          }, 3000);
 
         } catch (err) {
           console.error("Erreur d'accès à la caméra: ", err);
